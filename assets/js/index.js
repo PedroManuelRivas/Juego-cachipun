@@ -54,7 +54,7 @@ function maquina(b) {
 
 //Declarando módulo para veces que va a jugar Cachipun
 function asigna() {
-    let jugada = +prompt('Seleccione su jugada: Para piedra = 0, Para papel = 1, Para Tijera = 2')
+    let jugada = +prompt('Seleccione su jugada: \nPara piedra = 0, \nPara papel = 1, \nPara Tijera = 2')
     let aleatorio = Math.floor((Math.random() * (2 - 0)) + 0)
     let user = usuario(jugada)
     let machine = maquina(aleatorio)
@@ -71,7 +71,7 @@ function cantidad() {
 function iterar() {
     let tope = cantidad()
     for (let i = 0; i < tope; i++) {
-        console.log('jugada numero', i)
+        console.log('jugada numero', i+1)
         asigna()
 
     }
